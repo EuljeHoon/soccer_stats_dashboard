@@ -155,7 +155,7 @@ You can test if the backend API works correctly by visiting:
 
 **Jehoon Park**  
 University of Minnesota Twin Cities  
-📧 `jehoon@example.com`  
+📧 `jehoon.park0@gmail.com`  
 💻 GitHub: [@JehoonPark](https://github.com/Euljehoon)
 
 ---
