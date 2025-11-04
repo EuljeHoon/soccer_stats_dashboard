@@ -151,6 +151,44 @@ You can test if the backend API works correctly by visiting:
 
 ---
 
+## 💻 9️⃣ Frontend Setup
+
+The frontend is built using Vite, React, TypeScript, and styled-components.
+It connects to the Django backend to display player and team analytics.
+
+soccer_stats_dashboard/
+├── backend/              # Django backend
+├── frontend/             # React frontend (Vite project)
+│   ├── src/
+│   │   ├── App.tsx
+│   │   ├── main.tsx
+│   │   └── styles/
+│   │       └── GlobalStyle.ts
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── vite.config.ts
+├── manage.py
+└── requirements.txt
+
+- ⚙️ 1️⃣ Move into the Frontend Folder
+cd frontend
+
+- 📦 2️⃣ Install Dependencies
+
+Make sure Node.js (v18+) and npm are installed.
+
+npm install
+
+- 💅 3️⃣ Install Styled Components
+npm install styled-components
+npm install --save-dev @types/styled-components
+
+- 🧹 4️⃣ Clean the Default Template
+
+You can safely delete these default files (they’re just placeholders):
+
+rm -rf src/assets src/App.css src/index.css
+
 ## 🧠 Maintainer
 
 **Jehoon Park**  
