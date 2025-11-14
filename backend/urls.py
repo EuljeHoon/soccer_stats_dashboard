@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.http import JsonResponse
+from app.views import player_stats
 
 def hello(request):
     return JsonResponse({"message": "Hello from Django!"})
@@ -24,4 +25,5 @@ def hello(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/hello/', hello),
+    path('api/players/<int:playerID>/photo/', player_stats.PlayerPhoto.as_view(), name='get_player_photo'),
 ]
