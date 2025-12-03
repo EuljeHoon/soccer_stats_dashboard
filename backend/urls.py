@@ -26,4 +26,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/hello/', hello),
     path('api/players/<int:playerID>/photo/', player_stats.PlayerPhoto.as_view(), name='get_player_photo'),
+    path('api/players/<int:playerID>/info/', player_stats.PlayerInfo.as_view(), name='get_player_info'),
+    path('api/players/<int:playerID>/team/', player_stats.PlayerTeam.as_view(), name='get_player_team'),
 ]
