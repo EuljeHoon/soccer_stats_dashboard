@@ -31,5 +31,3 @@ def get_player_picture_url(player_id: str):
     return {
         "photo_url": player_photo_url
     }
-
-
