@@ -15,3 +15,12 @@ class Player(models.Model):
     photo_url = models.URLField(max_length=500)
     def __str__(self):
         return f"{self.name} ({self.team.name})"
+
+class Shot(models.Model):
+    player = models.ForeignKey(Player, on_delete=models.CASCADE)
+    foot = models.CharField(max_length = 10)
+    x = models.FloatField()
+    y = models.FloatField()
+    succeed = models.BooleanField()
+    def __str__(self):
+        return f"{self.player.name} {self.foot}"

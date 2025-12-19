@@ -1,3 +1,3 @@
-from app.dbmodels.models import Team, Player
+from app.dbmodels.models import Team, Player, Shot
 
-__all__ = ['Team', 'Player']
+__all__ = ['Team', 'Player', 'Shot']
