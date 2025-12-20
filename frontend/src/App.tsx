@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import PlayerHero from "./components/PlayerHero";
+import PlayerCarousel from "./components/PlayerCarousel";
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ export default function App() {
   
   return (
     <Container>
-      <PlayerHero playerID={6} />
+      <PlayerCarousel />
     </Container>
   );
 }
