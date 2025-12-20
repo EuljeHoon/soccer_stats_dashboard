@@ -1,7 +1,6 @@
 from app.dbmodels.models import Player
 
 def get_all_player_ids():
-    """모든 선수 ID 목록을 반환"""
     player_ids = list(Player.objects.values_list('id', flat=True))
     return {"player_ids": player_ids}
 

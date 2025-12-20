@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import PlayerImage from "./components/PlayerImage";
+import PlayerHero from "./components/PlayerHero";
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ export default function App() {
   
   return (
     <Container>
-      <PlayerImage playerID={1} />
+      <PlayerHero playerID={6} />
     </Container>
   );
 }
